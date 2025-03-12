@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-left">
+      <div class="menu-icon">☰</div>
+      <img src="logo.jpg" alt="YouTube Logo" class="logo">
+    </div>
+    <div class="navbar-middle">
+      <input type="text" placeholder="Search" class="search-bar">
+      <button class="search-btn">🔍</button>
+    </div>
+    <div class="navbar-right">
+      <button class="icon-btn">📹</button>
+      <button class="icon-btn">🔔</button>
+      <button class="icon-btn">👤</button>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <aside class="sidebar">
+      <ul>
+        <li>🏠 Home</li>
+        <li>🔥 Diploma</li>
+        <li>📚 Degree</li>
+        <li>🎥 Regstered</li>
+        <li>⏰ Watch Later</li>
+      </ul>
+    </aside>
+    <main class="content">
+      <div class="video-grid">
+        <!-- Sample Video Cards -->
+        <div class="video-card">
+          <img src="go.jpg" alt="Video Thumbnail" class="thumbnail">
+          <div class="video-info">
+            <div class="avatar">👤</div>
+            <div class="info-text">
+              <h4 class="video-title">Abune Gorgoryos</h4>
+              <p class="video-channel">Z.H.B.St.G.M Theological Leadership College</p>
+              <p class="video-views">1M views • 2 days ago</p>
+            </div>
+          </div>
+        </div>
+        <!-- Repeat video cards for more -->
+        <div class="video-card">
+          <img src="at.jpg" alt="Video Thumbnail" class="thumbnail">
+          <div class="video-info">
+            <div class="avatar">👤</div>
+            <div class="info-text">
+              <h4 class="video-title">Aba Atnatewos</h4>
+              <p class="video-channel">Z.H.B.St.G.M Theological Leadership College</p>
+              <p class="video-views">500K views • 1 week ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
+<style>
+
+  /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.logo {
+  height: 48px;
+}
+
+.navbar-middle {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 600px;
+}
+
+.search-bar {
+  width: 70%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 2px 0 0 2px;
+}
+
+.search-btn {
+  padding: 0.42rem;
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  margin-top: 1rem;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background-color: #fff;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  position: sticky;
+  top: 60px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 0.8rem 0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.sidebar li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Content Area */
+.content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+/* Video Card */
+.video-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.02);
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-info {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.avatar {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.info-text {
+  flex: 1;
+}
+
+.video-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.2rem;
+}
+
+.video-channel,
+.video-views {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+</style>

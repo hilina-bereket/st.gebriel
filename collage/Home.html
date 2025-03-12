@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            left: -290px; /* Initially hide the sidebar off-screen */
+            background-color: #333;
+            color: white;
+            transition: left 0.3s ease; /* Animation transition */
+            padding: 20px;
+            z-index: 1000; /* Make sure sidebar is on top */
+        }
+
+        .sidebar h2 {
+            margin: 0 0 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 20px;
+            margin-left: 20px; /* Space for the button */
+        }
+
+        .toggle-btn {
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            position: fixed; /* Position the button fixed to the left */
+            left: 10px;      /* Adjust distance from the left */
+            top: 10px;       /* Adjust distance from the top */
+            z-index: 1001; /* Make sure it is above the content */
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    </div>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const isVisible = sidebar.style.left === '0px';
+            
+            if (isVisible) {
+                sidebar.style.left = '-290px'; // Hide sidebar
+            } else {
+                sidebar.style.left = '0px'; // Show sidebar
+            }
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<title>St. Gebriel Monastery</title>
+<img src="logo.jpg" alt=""
+width="300">
+
+<style >
+	.cont-sub{
+		display: center;
+		background-color: lightblue;
+		border-radius: 10px;
+		margin-top: 15px;
+		padding: 25px;
+	}
+</style>
+
+<h1 style="text-align:center;
+border: solid;
+ border-color: orange;
+ margin: 20px;
+ padding: 50px;
+">
+<div>
+	
+</div> Z.H.B.St.G.M  Theological Leadership College </h1>
+<body style="text-align:center;
+background-color: lightskyblue;
+background: url(419242520_377115761815405_217423872859612558_nn);"><b>የዝዋይ ሐመረ ብርሃን ቅዱስ ገብርኤል ገዳም ሥራ አመራር መንፈሳዊ ኮሌጅ  ከአዲስ አበባ በሞጆ ሐዋሳ መስመር 163 ኪ.ሜ ርቀት ላይ ከምትገኘዋ የዝዋይ(ባቱ) ከተማ በስተምሥራቅ 3 ኪሜ ርቀት ላይ በዝዋይ ሐይቅ ዳርቻ ላይ የሚገኝ 
+	የኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተክርስቲያን መንፈሳዊ የትምህርት ተቋም ነው፡፡ የካህናት ማሠልጠኛው በሁለተኛው የኢትዮጵያ ፓትርያርክ በብፁዕ ወቅዱስ አቡነ ቴዎፍሎስ አማካኝነት በዓለም አብያተ ክርስቲያናት ድጋፍ በ1959 ዓ.ም የተቋቋመ የካህናት ማሠልጠኛ ነው፡፡
+</b>
+<div class="cont-sub">
+		<a class="a" href="history.html"><b>የኮሌጁ ታሪክ</b></a>
+		<a class="a1" href="class list.html"><b>በኮሌጁ የሚሰጡ ትምህርቶች</b></a>
+		<a class="a2" href="sighn up .html"><b>ወደ ኮሌጁ ለመመዝገብ </b></a>
+		<a class="a4" href="admin.html"><b>የኮሌጁ አስተዳደር</b></a>
+	</div>
+	<style>
+		.a{
+		background-color: rgb(32, 12, 78);
+		margin: 10 px;
+		text-decoration: none;
+		margin: 10px;
+		padding: 15px;
+		border-radius: 10px;
+		color: white;
+	}
+	.a:active{
+		color: #000;
+		background-color: #fff;
+	}
+	.a:hover{
+		color: blue;
+		background-color: white;
+	}
+	.a1{
+		background-color: blue;
+		text-decoration: none;
+		margin: 10px;
+		padding: 15px;
+		border-radius: 10px;
+		color: white;
+	}
+	.a1:hover{
+		color: blue;
+		background-color: white;
+
+	}
+	.a2:hover{
+		color: blue;
+		background-color: white;
+	}
+	.a2{
+		background-color: orange;
+		text-decoration: none;
+		margin: 10px;
+		padding: 15px;
+		border-radius: 10px;
+		color: white;
+	}
+	.a3:hover{
+		color: blue;
+		background-color: white;
+	}
+	.a3{
+		background-color: purple;
+		text-decoration: none;
+		margin: 10px;
+		padding: 15px;
+		border-radius: 10px;
+		color: white;
+	}
+	.a4:hover{
+		color: blue;
+		background-color: white;
+	}
+	.a4{
+		background-color: grey;
+		text-decoration: none;
+		margin: 10px;
+		padding: 15px;
+		border-radius: 10px;
+		color: white;
+	}
+</style>
+	
+	</body>
+
+</html>
+

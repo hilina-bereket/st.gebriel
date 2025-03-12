@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .menu-container {
+            display: inline-block;
+            position: relative;
+        }
+        .menu {
+            display: none;
+            list-style: none;
+            padding: 0;
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            width: 150px;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+        .menu li {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+        .menu li:last-child {
+            border-bottom: none;
+        }
+        .menu-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .menu-container:hover .menu,
+        .menu-container:focus-within .menu {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <button class="menu-button">Menu</button>
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Phone Number</li>
+        </ul>
+    </div>
+</body>
+</html>
